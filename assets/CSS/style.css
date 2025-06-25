@@ -213,8 +213,8 @@ aside img {
   }
   .card {
     width: 45%;
-    height: 27rem;
   }
+
   #card5 {
     display: none;
   }
@@ -225,5 +225,81 @@ aside img {
   }
   h2 {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+  nav {
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0;
+    padding-top: 2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  #shop img {
+    width: 30%;
+  }
+  #shop p {
+    font-size: 3rem;
+  }
+  .menu p {
+    font-size: 2rem;
+  }
+  #shop {
+    order: 1;
+    width: 90%;
+    padding: 2rem 3rem;
+  }
+  .menu {
+    width: 90%;
+    padding: 3rem 3rem;
+    border-radius: 35px;
+  }
+  .card {
+    width: 31%;
+  }
+  #card4 {
+    display: none;
+  }
+  .wide {
+    flex-wrap: nowrap;
+  }
+  main {
+    margin-left: 20%;
+    width: 80%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  #shop {
+    border-radius: 60px;
+  }
+  #shop img {
+    width: 20%;
+  }
+  #shop p {
+    font-size: 3rem;
+  }
+  .menu p {
+    font-size: 2rem;
+  }
+  .card {
+    width: 23%;
+  }
+  #card4 {
+    display: block;
+  }
+  #card4 button {
+    display: flex;
+    justify-content: center;
   }
 }
